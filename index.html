@@ -1,79 +1,892 @@
-html代码如下：<!DOCTYPE html>
-<html>
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
-</head>
-<body>
- 
-<div class="header">
-  <h1>花卉市场</h1>
-  <p></p>
-</div>
- 
-<div class="navbar">
-  <a href="#">牡丹</a>
-  <a href="#">丁香</a>
-  <a href="#">百合</a>
-  <a href="#">美人蕉</a>
-  <a href="#">夜来香</a>
-  <a href="#">松果菊</a>
-  <a href="#">锦葵</a>
-  <a href="#" class="right">点击了解更多花卉</a>
-</div>
- 
-<div class="row">
-  <div class="side">
-      <h2>常见的花卉</h2>
-      <h5>松果菊、红丁香、锦葵、勋章菊等等都是比较常见的花卉</h5>
-      <div class="fff" style="height:100px;">松果菊（学名：Echinacea purpurea (Linn.) Moench）是菊科松果菊属植物，多年生草本植物
-     
+  <header class="container-fluid">
+    <div class="home-top">
+      <a href="javascript:void(0);" id="logo">
+        <img src="./img/logo.png" alt="logo" class="home-top-logo">
+      </a>
+      <div class="home-top-right">
+        <input type="search" name="search" id="header-search" placeholder="请输入关键词">
+        <img src="./img/setting-gray.png" alt="扩展" class="home-top-setting">
+      </div>
     </div>
- 
-      <img src="./img/02.png" alt="牡丹">
-      <p>原野生于加拿大的马尼托巴湖及萨斯喀彻温省的东南部及美国中南部的一些开阔树林、大草原上。 [3]  喜欢光照充足、温暖的气候条件
-      <h3>更多</h3>
-      <p>松果菊可供药用，含有多种活性成分，可以刺激人体内的白细胞等免疫细胞的活力，具有增强免疫力的功效，还可以用于辅助治疗感冒、
-      <div class="fff" style="height:60px;"></div><br>
-      <img src="./img/02.png" alt="牡丹">
-      <div class="fff" style="height:60px;">……</div><br>
-      <img src="./img/02.png" alt="牡丹">
-      <div class="fff" style="height:60px;">……</div>
-  </div>
-  <div class="main">
-      <h2>牡丹</h2>
-      <h5>牡丹，双子叶植物</h5>
-      <div class="fff" style="height:100px;">牡丹（学名：Paeonia suffruticosa Andr.）：是双子叶植物纲、芍药科、芍药属植物。
-        为多年生落叶灌木，茎高达2米；分枝短而粗。叶通常为二回三出复叶，表面绿色，无毛，背面淡绿色，有时具白粉，叶柄长5-11厘米，
-        和叶轴均无毛。
-        花单生枝顶，苞片5，长椭圆形；萼片5，绿色，宽卵形，花瓣5或为重瓣，玫瑰色、红紫色、粉红色至白色，通常变异很大，倒卵形，
-        顶端呈不规则的波状；
-        花药长圆形，长4毫米；花盘革质，杯状，紫红色；心皮5，密生柔毛。蓇葖长圆形，密生黄褐色硬毛。花期5月；果期6月。</div>
-      <img src="./img/05.gif" alt="牡丹">
-      <p></p>
-      <p>花色泽艳丽，玉笑珠香，风流潇洒，富丽堂皇，素有“花中之王”的美誉。在栽培类型中，主要根据花的颜色，可分成上百个品种。
-          牡丹品种繁多，色泽亦多，
-          以黄、绿、肉红、深红、银红为上品，尤其黄、绿为贵。牡丹花大而香，故又有“国色天香”之称。</p>
-      <br>
-      <h2>百合</h2>
-      <h5>百合，一种花</h5>
-      <div class="fff" style="height:70px;">百合，中药名。为百合科植物卷丹Lilium lancifolium Thunb.、百合Lilium brownii
-         F．E．Brown var. viridulum Baker
-        或细叶百合Lilium pumilum DC.的干燥肉质鳞叶。具有养阴润肺，清心安神之功效。常用于阴虚燥咳，劳嗽咳血，虚烦惊悸，
-        失眠多梦，精神恍惚。</div>
-      <img src="./img/04.jpg" alt="百合">
-      <p>一些小知识</p>
-      <p>《本草经疏》：“百合，主邪气腹胀。所谓邪气者，即邪热也。邪热在腹，故腹胀，清其邪热则胀消矣；解利心家之邪热，
-          则心痛自廖；肾主二便，肾与大肠二经有热邪则不通利，
-          清二经之邪热，则大小便自利；甘能补中，热清则气生，故补中益气；清热利小便，故除浮肿、胪胀、痞满、寒热，
-          通身疼痛。乳难，足阳明热也；喉痹者，手少阳三焦、
-          手少阴心家热也；涕泪，肺肝热也。清阳明三焦心部之热，则上来诸病自除。”</p>
-  </div>
-</div>
- 
-<div class="footer">
-    <a class="bottom" href="#">回到顶部</a>
-  <h2>底部</h2>
-</div>
+    <nav class="home-nav">
+      <ul class="nav" role="tablist">
+        <li class="home-nav-item">
+          <a href="https://www.sdut.edu.cn/">学校首页</a>
+        </li>
+        <li class="home-nav-item">
+          <a href="./single-column-show.html">学工频道</a>
+          <ul class="nav-down">
+            <li><a href="">部门介绍</a></li>
+            <li><a href="">机构设置</a></li>
+            <li><a href="">学工简报</a></li>
+            <li><a href="">学工动态</a></li>
+          </ul>
+        </li>
+        <li class="home-nav-item">
+          <a href="./title-list.html">思政园地</a>
+          <ul class="nav-down">
+
+          </ul>
+        </li>
+        <li class="home-nav-item">
+          <a href="">学生服务</a>
+          <ul class="nav-down">
+            <li><a href="">资助管理中心</a></li>
+            <li><a href="">心理健康中心</a></li>
+            <li><a href="">大学生事务中心</a></li>
+            <li><a href="">学习发展中心</a></li>
+            <li><a href="">公寓管理中心</a></li>
+            <li><a href="">武装部</a></li>
+          </ul>
+        </li>
+        <li class="home-nav-item">
+          <a href="">辅导员之家</a>
+          <ul class="nav-down">
+            <li><a href="">辅导员风采</a></li>
+            <li><a href="">导言导语</a></li>
+            <li><a href="">辅导员博客</a></li>
+          </ul>
+        </li>
+        <li class="home-nav-item">
+          <a href="./img-list.html">青春栏目</a>
+          <ul class="nav-down">
+            <li><a href="">视点频道</a></li>
+            <li><a href="">访谈频道</a></li>
+            <li><a href="">文娱频道</a></li>
+            <li><a href="">共建频道</a></li>
+            <li><a href="">校园快讯</a></li>
+            <li><a href="">导员说</a></li>
+            <li><a href="">图片专区</a></li>
+            <li><a href="">视频专区</a></li>
+          </ul>
+        </li>
+        <li class="home-nav-item">
+          <a href="">易班</a>
+          <ul class="nav-down">
+
+          </ul>
+        </li>
+        <li class="home-nav-item">
+          <a href="./double-column-show.html">信息公开</a>
+          <ul class="nav-down">
+
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 主体内容 -->
+  <section>
+
+    <!-- banner 部分 -->
+    <div class="home-banner">
+
+      <!-- 主 banner -->
+      <div class="home-banner-main">
+        <div class="swiper-container" id="home-banner-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/banner-main.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/banner-main.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/banner-main.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/banner-main.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/banner-main.png" alt="">
+              </a>
+            </div>
+          </div>
+
+          <!-- 分页器 -->
+          <div class="swiper-pagination"></div>
+
+          <!-- 导航按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+
+      <!-- banner 右侧 -->
+      <div class="home-banner-right">
+
+        <!-- 小 banner -->
+        <div class="home-banner-small">
+          <div id="home-banner-small" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/home-banner-small.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/home-banner-small.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/home-banner-small.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 日历列表 -->
+        <div class="home-banner-calendar">
+          <ul>
+            <li>
+              <div class="home-banner-calendar-item">
+                <div class="home-banner-calendar-item-datebox">
+                  <div class="home-banner-calendar-item-day">
+                    <!-- 日期 -->
+                    1
+                  </div>
+                  <div class="home-banner-calendar-item-mouth">
+                    <!-- 月份 -->
+                    12月
+                  </div>
+                </div>
+                <div class="home-banner-calendar-item-content">
+                  <div class="home-banner-calendar-item-content-title">
+                    <!-- 事件名称，文字过多时用...代替 -->
+                    第十四周校领导接待日
+                  </div>
+                  <div>
+                    <time class="home-banner-calendar-item-content-date">
+                      <!-- 日期 -->
+                      12月7日（星期五） 14:30-17:00
+                    </time>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-banner-calendar-item">
+                <div class="home-banner-calendar-item-datebox">
+                  <div class="home-banner-calendar-item-day">
+                    <!-- 日期 -->
+                    1
+                  </div>
+                  <div class="home-banner-calendar-item-mouth">
+                    <!-- 月份 -->
+                    12月
+                  </div>
+                </div>
+                <div class="home-banner-calendar-item-content">
+                  <div class="home-banner-calendar-item-content-title">
+                    第十四周校领导接待日
+                  </div>
+                  <div>
+                    <time class="home-banner-calendar-item-content-date">12月7日（星期五） 14:30-17:00</time>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-banner-calendar-item">
+                <div class="home-banner-calendar-item-datebox">
+                  <div class="home-banner-calendar-item-day">
+                    <!-- 日期 -->
+                    1
+                  </div>
+                  <div class="home-banner-calendar-item-mouth">
+                    <!-- 月份 -->
+                    12月
+                  </div>
+                </div>
+                <div class="home-banner-calendar-item-content">
+                  <div class="home-banner-calendar-item-content-title">
+                    第十四周校领导接待日
+                  </div>
+                  <div>
+                    <time class="home-banner-calendar-item-content-date">12月7日（星期五） 14:30-17:00</time>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-banner-calendar-item">
+                <div class="home-banner-calendar-item-datebox">
+                  <div class="home-banner-calendar-item-day">
+                    <!-- 日期 -->
+                    1
+                  </div>
+                  <div class="home-banner-calendar-item-mouth">
+                    <!-- 月份 -->
+                    12月
+                  </div>
+                </div>
+                <div class="home-banner-calendar-item-content">
+                  <div class="home-banner-calendar-item-content-title">
+                    第十四周校领导接待日
+                  </div>
+                  <div>
+                    <time class="home-banner-calendar-item-content-date">12月7日（星期五） 14:30-17:00</time>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新闻部分 -->
+    <div class="home-new">
+      <div>
+        <div class="home-new-channel">
+          <a href="">校园快讯</a>
+        </div>
+        <div class="home-new-content">
+          <ul>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="home-new-channel">
+          <a href="">学工动态</a>
+        </div>
+        <div class="home-new-content">
+          <ul>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                </div>
+                </a>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="home-new-channel">
+          <a href="">辅导员风采</a>
+        </div>
+        <div class="home-new-content">
+          <ul>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="home-new-content-item">
+                <div class="home-new-content-item-title">
+                  <a href="javascript:void(0);">
+                    <span class="home-new-content-item-title-category">
+                      <!-- 文章类别 -->
+                      [<span>文学</span>]
+                    </span>
+                    <span>
+                      <!-- 文章题目 -->
+                      “金秋文学周”——海飞专场讲座顺…
+                    </span>
+                  </a>
+                </div>
+                <div class="home-new-content-item-info">
+                  作者：
+                  <span>
+                    <!-- 作者 -->
+                    吕逸新 林岩岩 杜晓琪
+                  </span>
+                  <time>
+                    <!-- 日期 -->
+                    2019-01-01
+                  </time>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 长 banner -->
+    <div class="home-banner-long">
+      <div class="swiper-container" id="home-banner-long">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./img/home-banner-long.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./img/home-banner-long.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./img/home-banner-long.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./img/home-banner-long.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./img/home-banner-long.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 青春栏目 -->
+    <div class="home-youth">
+      <div>
+        <div class="home-youth-top">
+          <div class="home-youth-top-rectangle"></div>
+          <span class="home-youth-top-title">美好的青春总是迸发光彩</span>
+          <div class="home-youth-top-rectangle"></div>
+        </div>
+        <div class="home-youth-content">
+          <div class="home-youth-content-left">
+            <div>
+              <ul>
+                <li><a href="">导员说</a></li>
+                <li><a href="">访谈频道</a></li>
+                <li><a href="">视点频道</a></li>
+                <li><a href="">文娱频道</a></li>
+                <li><a href="">共建频道</a></li>
+              </ul>
+            </div>
+            <div class="home-youth-content-left-banner home-youth-content-center-item">
+              <a href="">
+                <img src="./img/home-youth-banner.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="home-youth-content-center">
+            <div class="home-youth-content-center-item">
+              <a href="">
+                <img src="./img/home-youth-huishou.png" alt="">
+                <div class="home-youth-content-center-title">
+                  <!-- 标题 -->
+                  疯狂快递盒 多方共治
+                </div>
+              </a>
+            </div>
+            <div class="home-youth-content-center-item">
+              <a href="">
+                <img src="./img/home-youth-jiu.png" alt="">
+                <div class="home-youth-content-center-title">
+                  <!-- 标题 -->
+                  美酒香醇，切莫辜负饮者期盼
+                </div>
+              </a>
+            </div>
+            <div class="home-youth-content-center-item">
+              <a href="">
+                <img src="./img/home-youth-pa.png" alt="">
+                <div class="home-youth-content-center-title">
+                  <!-- 标题 -->
+                  博观而约取，厚积而薄发——访化学化工学院国奖获得者付翔宇
+                </div>
+              </a>
+            </div>
+            <div class="home-youth-content-center-item">
+              <a href="">
+                <img src="./img/home-youth-ren.png" alt="">
+                <div class="home-youth-content-center-title">
+                  <!-- 标题 -->
+                  博观而约取，厚积而薄发——访化学化工学院国奖获得者付翔宇
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="home-youth-content-right home-youth-content-center-item">
+            <a href="">
+              <img src="./img/home-youth-xin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 图片视频专区 -->
+    <div class="home-imgvideo">
+      <div class="home-imgvideo-top ">
+        <div class="home-youth-top-rectangle home-imgvideo-top-rectangle"></div>
+        <span class="home-youth-top-title home-imgvideo-top-title">记录青春的印记一直心潮澎湃</span>
+        <div class="home-youth-top-rectangle home-imgvideo-top-rectangle"></div>
+      </div>
+      <div class="home-imgvideo-content">
+        <div class="home-imgvideo-content-image">
+          <div class="home-imgvideo-content-image-left">
+            <div class="home-imgvideo-content-image-left-title">影像志</div>
+            <div class="home-imgvideo-content-image-left-line"></div>
+            <div class="home-imgvideo-content-image-left-img">
+              <a href="">
+                图片专区
+              </a>
+            </div>
+            <div class="home-imgvideo-content-image-left-video">
+              <a href="">
+                视频专区
+              </a>
+            </div>
+          </div>
+          <div class="home-imgvideo-content-image-center">
+            <img src="img/imgvideo1.png" alt="">
+          </div>
+          <ul class="home-imgvideo-content-image-right">
+            <li>
+              <a href="" target="_blank">
+                <img src="img/图片专区.jpg" alt="">
+                <div class="home-imgvideo-content-image-right-title">
+                  专访2018十佳大学生系列
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="img/图片专区.jpg" alt="">
+                <div class="home-imgvideo-content-image-right-title">
+                  专访2018十佳大学生系列
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="img/图片专区.jpg" alt="">
+                <div class="home-imgvideo-content-image-right-title">
+                  专访2018十佳大学生系列
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="img/图片专区.jpg" alt="">
+                <div class="home-imgvideo-content-image-right-title">
+                  专访2018十佳大学生系列斤斤计较斤斤计较红红火火恍恍惚惚
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="home-imgvideo-content-video">
+          <li>
+            <div class="home-imgvideo-content-video-show">
+              <a href=""></a>
+              <img src="img/video.jpg" alt="">
+            </div>
+            <div class="home-imgvideo-content-video-title">
+              荣耀或推出一款全新类型的大屏设备
+            </div>
+            <span></span>
+          </li>
+          <li>
+            <div class="home-imgvideo-content-video-show">
+              <a href=""></a>
+              <img src="img/video.jpg" alt="">
+            </div>
+            <div class="home-imgvideo-content-video-title">
+              荣耀或推出一款全新类型的大屏设备
+            </div>
+            <span></span>
+          </li>
+          <li>
+            <div class="home-imgvideo-content-video-show">
+              <a href=""></a>
+              <img src="img/video.jpg" alt="">
+            </div>
+            <div class="home-imgvideo-content-video-title">
+              荣耀或推出一款全新类型的大屏设备
+            </div>
+            <span></span>
+          </li>
+          <li>
+            <div class="home-imgvideo-content-video-show">
+              <a href=""></a>
+              <img src="img/video.jpg" alt="">
+            </div>
+            <div class="home-imgvideo-content-video-title">
+              荣耀或推出一款全新类型的大屏设备
+            </div>
+            <span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
